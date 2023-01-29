@@ -1,0 +1,19 @@
+@use 'variables' as *;
+/* basic styling */
+
+html {
+    /* setting 1rem = 20px. assuming default 16px browser setting */
+    font-size: 125%;
+}
+
+body {
+    color: $black;
+    font-family: $bodyFont;
+    font-weight: 600;
+}
+
+h1 {
+    font-family: $titleFont;
+    font-weight: 800;
+    font-style: italic;
+}

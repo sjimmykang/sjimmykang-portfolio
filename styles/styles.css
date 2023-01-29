@@ -256,7 +256,22 @@ img {
   width: 100%;
 }
 
-header {
-  height: 30vh;
-  background-color: lightpink;
+/* fonts used */
+/* all colors used */
+/* basic styling */
+html {
+  /* setting 1rem = 20px. assuming default 16px browser setting */
+  font-size: 125%;
+}
+
+body {
+  color: #222527;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-style: italic;
 }

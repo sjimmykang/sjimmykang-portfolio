@@ -1,7 +1,2 @@
 @use "partials/normalize";
-@use "partials/variables" as *;
-
-header {
-    height: 30vh;
-    background-color: lightpink;
-}
+@use "partials/baseStyles";
