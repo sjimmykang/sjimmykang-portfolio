@@ -11,7 +11,6 @@
     margin-bottom: 2rem;
 }
 
-
 .skills ul {
     display: flex;
     justify-content: space-between;
@@ -25,7 +24,6 @@
     align-items: center;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.4s;
-
     &:hover,
     &:focus {
         border-bottom: 2px solid $black;

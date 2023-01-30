@@ -5,7 +5,6 @@
 .contact {
     background-color: $blue;
     padding: 2rem 0;
-
     .wrapper {
         width: 60%;
     }
@@ -19,14 +18,12 @@
 form {
     display: flex;
     flex-direction: column;
-
     input,
     label {
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;
     }
-
     input,
     textarea {
         margin-top: 0.5rem;
@@ -46,7 +43,6 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
     a {
         display: flex;
         margin: 1rem;
@@ -56,7 +52,6 @@ form {
 .linkIcon {
     font-size: 2.5rem;
     color: $coral;
-
     &:visited {
         color: $coral;
     }

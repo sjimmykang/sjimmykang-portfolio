@@ -342,32 +342,59 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
 }
 
-nav {
-  position: absolute;
-  top: 1rem;
+.navContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%;
-  z-index: 10;
+  background-color: #424b6d;
 }
-nav ul {
+
+.scroll-down {
+  top: -5rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  padding: 1rem 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #424b6d;
+  width: 100%;
+  z-index: 10;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-transition: top 0.4s;
+  transition: top 0.4s;
+}
+nav ul {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 nav li {
   margin: 0 1rem;
+  padding: 0.25rem;
 }
 
 nav a {
@@ -753,6 +780,23 @@ footer p {
   }
 }
 @media (max-width: 600px) {
+  .scroll-down {
+    top: -6rem;
+  }
+  nav li {
+    width: 30%;
+    text-align: center;
+  }
+  header {
+    min-height: 100vh;
+  }
+  .navIcon {
+    color: #f2f4f5;
+    font-size: 2rem;
+  }
+  .navIcon:visited {
+    color: #f2f4f5;
+  }
   .aboutContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

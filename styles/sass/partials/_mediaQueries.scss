@@ -4,12 +4,10 @@
 @media (max-width: 940px) {
     .projectSingleContainer {
         flex-direction: column;
-
         .projectTextContainer,
         .projectSingleImageContainer {
             width: 100%;
         }
-
         ul {
             justify-content: space-around;
         }
@@ -25,6 +23,28 @@
 }
 
 @media (max-width: 600px) {
+    .scroll-down {
+        top: -6rem;
+    }
+
+    nav li {
+        width: 30%;
+        text-align: center;
+    }
+
+    header {
+        min-height: 100vh;
+    }
+
+
+    .navIcon {
+        color: $white;
+        font-size: 2rem; 
+        &:visited {
+            color: $white;
+        }
+    }
+
     .aboutContainer {
         flex-direction: column;
         align-items: center;
@@ -43,5 +63,4 @@
     .contact .wrapper {
         width: 80%;
     }
-
 }
