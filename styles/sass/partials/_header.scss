@@ -24,7 +24,7 @@ header {
 nav {
     position: fixed;
     top: 0;
-    padding: 1rem 10%;
+    padding: 0.5rem 10%;
     display: flex;
     flex-direction: row;
     background-color: $darkBlue;
@@ -46,6 +46,7 @@ nav {
 
 nav a {
     color: $white;
+    padding: 0.25rem;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.4s;
     &:visited {

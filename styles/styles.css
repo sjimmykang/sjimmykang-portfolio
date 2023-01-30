@@ -365,7 +365,7 @@ header {
 nav {
   position: fixed;
   top: 0;
-  padding: 1rem 10%;
+  padding: 0.5rem 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -399,6 +399,7 @@ nav li {
 
 nav a {
   color: #f2f4f5;
+  padding: 0.25rem;
   border-bottom: 2px solid transparent;
   -webkit-transition: border-bottom 0.4s;
   transition: border-bottom 0.4s;
@@ -441,7 +442,7 @@ nav a:hover, nav a:focus {
   font-family: "Playfair Display", serif;
   font-weight: 800;
   font-style: italic;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .aboutContainer {
@@ -499,7 +500,7 @@ nav a:hover, nav a:focus {
 
 .skills h2 {
   color: #222527;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .skills ul {
@@ -551,7 +552,7 @@ nav a:hover, nav a:focus {
 
 .projects h2 {
   color: #222527;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .projects h3 {
@@ -605,9 +606,8 @@ nav a:hover, nav a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .projectSingleContainer a {
   display: -webkit-box;
@@ -624,6 +624,7 @@ nav a:hover, nav a:focus {
 }
 .projectSingleContainer p {
   margin-bottom: 1rem;
+  line-height: 1.5rem;
 }
 .projectSingleContainer .inlineText {
   display: inline-block;
@@ -678,7 +679,7 @@ nav a:hover, nav a:focus {
 
 .contact h2 {
   color: #f2f4f5;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 form {
