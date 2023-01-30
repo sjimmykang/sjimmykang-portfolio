@@ -20,8 +20,9 @@
 </head>
 <body>
 	<header id="home">
-		<div class="wrapper">
+		<div class="navContainer">
 			<nav>
+				<!-- nav scrolling js at the bottom -->
 				<ul>
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
@@ -29,7 +30,8 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-	
+		</div>
+		<div class="wrapper">
 			<div class="headerTextContainer">
 				<h1>Jimmy Kang</h1>
 				<h3>Toronto based web developer</h3>
@@ -100,44 +102,45 @@
 			<h2>projects</h2>
 			<div class="projectContainer">
 				<div class="projectSingleContainer">
-					<a href="">
-						<img src="" alt="project1 thumbnail">
+					<a class="projectSingleImageContainer" href="https://animetopten.netlify.app/">
+						<img src="./assets/thumb-anime.png" alt="Anime Top Ten project thumbnail">
 					</a>
-					<div class="projectTextContainer">
-						<h3>project title</h3>
-						<p class="skillsUsed"></p>
-						<p>project description</p>
+					<div class="projectTextContainer textAl-left">
+						<h3>Anime Top Ten</h3>
+						<p class="skillsUsed">HTML, JavaScript, RESTful API, SASS</p>
+						<p>This was my first pair programming project. With <a href="https://github.com/KylMoore" class="inlineText">Kyle Moore</a>, we used JavaScript and fetched data from a RESTful API, <a class="inlineText" href="https://jikan.moe/">Jikan</a>, to show the listing for top ten anime that meets the user's selected era and genre.</p>
 						<ul>
-							<li><a class="brightButton" href="">view live</a></li>
-							<li><a class="brightButton" href="">view github</a></li>
+							<li><a class="brightButton" href="https://animetopten.netlify.app/">view live</a></li>
+							<li><a class="brightButton" href="https://github.com/KylMoore/AnimeTopTen">view github</a></li>
 						</ul>
 					</div>
 				</div> <!-- end of project single container -->
-				<div class="projectSingleContainer">
-					<div class="projectTextContainer">
-						<h3>project title</h3>
-						<p class="skillsUsed"></p>
-						<p>project description</p>
+				<div class="projectSingleContainer fd-row-rev">
+					<a class="projectSingleImageContainer" href="https://sjimmykang-creative.netlify.app/">
+						<img src="./assets/thumb-creative.png" alt="Creative project thumbnail">
+					</a>
+					<div class="projectTextContainer textAl-right">
+						<h3>Creative</h3>
+						<p class="skillsUsed">HTML, SASS</p>
+						<p>This is a multipage psd conversion project. With style guide and psd provided to recreate the look as much as possible.</p>
 						<ul>
-							<li><a class="brightButton" href="">view live</a></li>
-							<li><a class="brightButton" href="">view github</a></li>
+							<li><a class="brightButton" href="https://sjimmykang-creative.netlify.app/">view live</a></li>
+							<li><a class="brightButton" href="https://github.com/sjimmykang/creative">view github</a></li>
 						</ul>
 					</div>
-					<a href="">
-						<img src="" alt="project1 thumbnail">
-					</a>
+					
 				</div> <!-- end of project single container -->
 				<div class="projectSingleContainer">
-					<a href="">
-						<img src="" alt="project1 thumbnail">
+					<a class="projectSingleImageContainer" href="https://sjimmykang-electric-select.netlify.app/">
+						<img src="./assets/thumb-electric.png" alt="Electric Select project thumbnail">
 					</a>
-					<div class="projectTextContainer">
-						<h3>project title</h3>
-						<p class="skillsUsed"></p>
-						<p>project description</p>
+					<div class="projectTextContainer textAl-left">
+						<h3>Electric Select</h3>
+						<p class="skillsUsed">HTML, SASS, JavaScript</p>
+						<p>This was my first psd conversion project. I have used all my current knowledge and power of google to make this website as close as possible to the provided psd file. Later, I have updated the site with JavaScript on the gallery to make it more interactive.</p>
 						<ul>
-							<li><a class="brightButton" href="">view live</a></li>
-							<li><a class="brightButton" href="">view github</a></li>
+							<li><a class="brightButton" href="https://sjimmykang-electric-select.netlify.app/">view live</a></li>
+							<li><a class="brightButton" href="https://github.com/sjimmykang/electric-select">view github</a></li>
 						</ul>
 					</div>
 				</div> <!-- end of project single container -->
@@ -148,13 +151,13 @@
 	<section id="contact" class="contact">
 		<div class="wrapper">
 			<h2>get in touch</h2>
+			<p>Whether it be job opportunities to conversation about fantasy novel and anime, you can always reach me here.</p>
 			<ul class="linkIconContainer">
 				<li><a href="https://www.linkedin.com/in/sjimmykang/"><i class="fa-brands fa-linkedin linkIcon"><span class="sr-only">Link to LinkedIn Profile</span></i></a></li>
 				<li><a href="https://github.com/sjimmykang"><i class="fa-brands fa-github linkIcon"><span class="sr-only">Link to github Profile</span></i></a></li>
 				<!-- how to mailto from: https://css-tricks.com/snippets/html/mailto-links/ -->
 				<li><a href="mailto:sjimmy.kang@gmail.com"><i class="fa-solid fa-envelope linkIcon"><span class="sr-only">Mailto link for auto emailing</span></i></a></li>
 			</ul>
-			<p>stay in touch</p>
 
 			<!-- emailing form made using Formspree -->
 			<form action="https://formspree.io/f/mknaozno" method="POST">
@@ -168,9 +171,8 @@
 				</label>
 				<label>
 					message
-					<textarea name="message"></textarea>
+					<textarea name="message" rows="4"></textarea>
 				</label>
-
 				<button type="submit" class="brightButton buttonCenter">submit</button>
 			</form>
 		</div>
@@ -181,5 +183,6 @@
 			<p>created in 2023 by Jimmy Kang</p>
 		</div>
 	</footer>
+	<script src="./nav.js"></script>
 </body>
 </html>

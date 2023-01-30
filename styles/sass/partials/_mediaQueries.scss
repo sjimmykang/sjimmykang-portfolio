@@ -1,0 +1,66 @@
+/* Media Queries styles */
+@use "variables" as *;
+
+@media (max-width: 940px) {
+    .projectSingleContainer {
+        flex-direction: column;
+        .projectTextContainer,
+        .projectSingleImageContainer {
+            width: 100%;
+        }
+        ul {
+            justify-content: space-around;
+        }
+    }
+
+    .textAl-right {
+        text-align: left;
+    }
+
+    .fd-row-rev {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .scroll-down {
+        top: -6rem;
+    }
+
+    nav li {
+        width: 30%;
+        text-align: center;
+    }
+
+    header {
+        min-height: 100vh;
+    }
+
+
+    .navIcon {
+        color: $white;
+        font-size: 2rem; 
+        &:visited {
+            color: $white;
+        }
+    }
+
+    .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutTextContainer {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+
+    .skills li {
+        width: 25%;
+    }
+
+    .contact .wrapper {
+        width: 80%;
+    }
+}

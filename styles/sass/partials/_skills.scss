@@ -11,19 +11,19 @@
     margin-bottom: 2rem;
 }
 
-
 .skills ul {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 
 .skills li {
     display: flex;
     flex-direction: column;
+    align-items: center;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.4s;
-
     &:hover,
     &:focus {
         border-bottom: 2px solid $black;
