@@ -11,6 +11,7 @@ window.addEventListener('scroll', () => {
 
     if (currentScroll - lastScroll > 0) {
         navEl.classList.add('scroll-down');
+        /* scrolling down means increasing Y value */
     } else {
         navEl.classList.remove('scroll-down');
     }
