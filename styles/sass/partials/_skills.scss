@@ -1,0 +1,42 @@
+/* Skills section styles */
+@use "variables" as *;
+
+.skills {
+    background-color: $lightBlue;
+    padding: 2rem 0;
+}
+
+.skills h2 {
+    color: $black;
+    margin-bottom: 2rem;
+}
+
+
+.skills ul {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.skills li {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.4s;
+
+    &:hover,
+    &:focus {
+        border-bottom: 2px solid $black;
+    }
+}
+.skills p {
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.deviconIcon {
+    color: $black;
+    font-size: 3.5rem;
+}

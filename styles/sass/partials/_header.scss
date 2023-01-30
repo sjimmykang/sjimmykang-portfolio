@@ -1,0 +1,48 @@
+/* Header styles */
+@use "variables" as *;
+
+header {
+    background-color: $darkBlue;
+    padding: 1rem 0;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    z-index: 10;
+
+    a {
+        color: $white;
+        &:visited {
+            color: $white;
+        }
+    }
+
+    ul {
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+    }
+
+    li {
+        margin: 0 1rem;
+    }
+}
+
+.headerTextContainer {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        margin: 1rem 0;
+    }
+
+}

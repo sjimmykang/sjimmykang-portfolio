@@ -262,16 +262,320 @@ img {
 html {
   /* setting 1rem = 20px. assuming default 16px browser setting */
   font-size: 125%;
+  /* enable smooth scrolling when using anchors */
+  scroll-behavior: smooth;
 }
 
 body {
   color: #222527;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
+  background-color: #f2f4f5;
 }
 
-h1 {
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1,
+h2 {
+  font-size: 2.8rem;
   font-family: "Playfair Display", serif;
   font-weight: 800;
   font-style: italic;
+  color: #f2f4f5;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: #f2f4f5;
+  text-align: center;
+}
+
+.brightButton {
+  color: #222527;
+  border-bottom: 1px solid transparent;
+  background-color: #eeaf98;
+  display: block;
+  padding: 0.5rem;
+  width: 9rem;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+}
+
+.buttonCenter {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+/* Header styles */
+header {
+  background-color: #424b6d;
+  padding: 1rem 0;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  z-index: 10;
+}
+nav a {
+  color: #f2f4f5;
+}
+nav a:visited {
+  color: #f2f4f5;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav li {
+  margin: 0 1rem;
+}
+
+.headerTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.headerTextContainer h3 {
+  margin: 1rem 0;
+}
+
+/* About section styles */
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 0;
+}
+
+.about h2 {
+  color: #5169bd;
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.aboutContainer img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 267px;
+  margin-right: 1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  /* box shadow using generator: https: //html-css-js.com/css/generator/box-shadow/ */
+  -webkit-box-shadow: 5px 5px 2px 1px #222527;
+          box-shadow: 5px 5px 2px 1px #222527;
+}
+.aboutContainer p {
+  margin-bottom: 0.5rem;
+}
+
+.aboutTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* Skills section styles */
+.skills {
+  background-color: #cad2ec;
+  padding: 2rem 0;
+}
+
+.skills h2 {
+  color: #222527;
+  margin-bottom: 2rem;
+}
+
+.skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.4s;
+  transition: border-bottom 0.4s;
+}
+.skills li:hover, .skills li:focus {
+  border-bottom: 2px solid #222527;
+}
+
+.skills p {
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.deviconIcon {
+  color: #222527;
+  font-size: 3.5rem;
+}
+
+/* Projects section style */
+.projects {
+  padding: 2rem 0;
+}
+
+.projects h2 {
+  color: #222527;
+}
+
+.projects h3 {
+  color: #222527;
+}
+
+/* Contact section styles */
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+form input,
+form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact {
+  background-color: #5169bd;
+}
+
+.contact h2 {
+  color: #f2f4f5;
+}
+
+.contact p {
+  color: #f2f4f5;
+}
+
+.contact label {
+  color: #f2f4f5;
+  text-transform: uppercase;
+}
+
+.linkIconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.linkIconContainer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem;
+}
+
+.linkIcon {
+  font-size: 2rem;
+  color: #eeaf98;
+}
+.linkIcon:visited {
+  color: #eeaf98;
+}
+
+/* Footer styles */
+footer {
+  background-color: #424b6d;
+  padding: 0.5rem 0;
+}
+footer p {
+  text-align: center;
+  color: #f2f4f5;
+  font-weight: 400;
 }

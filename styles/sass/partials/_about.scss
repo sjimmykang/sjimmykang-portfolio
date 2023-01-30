@@ -1,0 +1,43 @@
+/* About section styles */
+@use "variables" as *;
+
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.about h2 {
+    color: $blue;
+    font-family: $titleFont;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+        display: flex;
+        width: 200px;
+        height: 267px;
+        margin-right: 1rem;
+        object-fit: contain;
+        /* box shadow using generator: https: //html-css-js.com/css/generator/box-shadow/ */
+        box-shadow: 5px 5px 2px 1px $black;
+    }
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+    
+}
+
+.aboutTextContainer {
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+}

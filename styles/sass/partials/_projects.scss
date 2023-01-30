@@ -1,0 +1,14 @@
+/* Projects section style */
+@use "variables" as *;
+
+.projects {
+    padding: 2rem 0;
+}
+
+.projects h2 {
+    color: $black;
+}
+
+.projects h3 {
+    color: $black;
+}

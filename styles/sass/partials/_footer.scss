@@ -1,0 +1,13 @@
+/* Footer styles */
+@use "variables" as *;
+
+footer {
+    background-color: $darkBlue;
+    padding: 0.5rem 0;
+
+    p {
+        text-align: center;
+        color: $white;
+        font-weight: 400;
+    }
+}

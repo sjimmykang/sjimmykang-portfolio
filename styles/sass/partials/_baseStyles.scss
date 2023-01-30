@@ -1,19 +1,59 @@
-@use 'variables' as *;
 /* basic styling */
+@use "variables" as *;
 
 html {
     /* setting 1rem = 20px. assuming default 16px browser setting */
     font-size: 125%;
+    /* enable smooth scrolling when using anchors */
+    scroll-behavior: smooth;
 }
+
 
 body {
     color: $black;
     font-family: $bodyFont;
     font-weight: 600;
+    background-color: $white;
 }
 
-h1 {
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2 {
+    font-size: 2.8rem;
     font-family: $titleFont;
     font-weight: 800;
     font-style: italic;
+    color: $white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    color: $white;
+    text-align: center;
+}
+
+.brightButton {
+    color: $black;
+    border-bottom: 1px solid transparent;
+    background-color: $coral;
+    display: block;
+    padding: 0.5rem;
+    width: 9rem;
+    text-align: center;
+    font-family: $bodyFont;
+    font-weight: 600;
+}
+
+.buttonCenter {
+    align-self: center;
 }

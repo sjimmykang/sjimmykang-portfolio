@@ -10,6 +10,10 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Source+Sans+Pro:wght@400;600&display=swap"
 		rel="stylesheet">
+	<!-- Font Awesome icons -->
+	<script src="https://kit.fontawesome.com/e354ddc77c.js" crossorigin="anonymous"></script>
+	<!-- Devicon for dev skill icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 	<!-- styles -->
 	<link rel="stylesheet" href="./styles/styles.css">
 	<title>Jimmy's Portfolio</title>
@@ -27,9 +31,9 @@
 			</nav>
 	
 			<div class="headerTextContainer">
-				<h1>Seukkeun Jimmy Kang</h1>
+				<h1>Jimmy Kang</h1>
 				<h3>Toronto based web developer</h3>
-				<a class="brightButton" href="#contact">get in touch</a>
+				<a class="brightButton buttonCenter" href="#contact">get in touch</a>
 			</div>
 		</div>
 	</header>
@@ -37,7 +41,14 @@
 	<section id="about" class="about">
 		<div class="wrapper">
 			<h2>about me</h2>
-			<p>mmmmmmmm test content</p>
+			<div class="aboutContainer">
+				<img src="./assets/profile_pic01.jpg" alt="My profile picture">
+				<div class="aboutTextContainer">
+					<p>Hello! My name is Seukkeun Jimmy Kang, I go by Jimmy. I am an aspiring Front-end web developer.</p>
+					<p>I've been dedicating my recent time on honing my coding skills. And although I make silly coding mistakes, I love digging down to the root cause of the problem to fix them and learn from my mistakes along the way.</p>
+					<p>In my spare time, I like to read fantasy novels or play video game while drinking hot tea in the comfort of my room.</p>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -45,7 +56,41 @@
 		<div class="wrapper">
 			<h2>skills</h2>
 			<ul>
-				<li><a href=""><img src="" alt=""></a></li>
+				<li>
+					<i class="devicon-css3-plain deviconIcon"></i></i>
+					<span class="sr-only">CSS</span>
+					<p>css</p>
+				</li>
+				<li>
+					<i class="devicon-firebase-plain deviconIcon"></i>
+					<span class="sr-only">Firebase</span>
+					<p>firebase</p>
+				</li>
+				<li>
+					<i class="devicon-github-original deviconIcon"></i>
+					<span class="sr-only">github/git</span>
+					<p>github/git</p>
+				</li>
+				<li>
+					<i class="devicon-html5-plain deviconIcon"></i>
+					<span class="sr-only">HTML</span>
+					<p>html</p>
+				</li>
+				<li>
+					<i class="devicon-javascript-plain deviconIcon"></i>
+					<span class="sr-only">JavaScript</span>
+					<p>javascript</p>
+				</li>
+				<li>
+					<i class="devicon-react-original deviconIcon"></i>
+					<span class="sr-only">react</span>
+					<p>react</p>
+				</li>
+				<li>
+					<i class="devicon-sass-original deviconIcon"></i>
+					<span class="sr-only">SASS</span>
+					<p>sass</p>
+				</li>
 			</ul>
 		</div>
 	</section>
@@ -54,42 +99,86 @@
 		<div class="wrapper">
 			<h2>projects</h2>
 			<div class="projectContainer">
-				<h3>project title</h3>
-				<p>project description</p>
-				<ul>
-					<li><a class="brightButton" href="">view live</a></li>
-					<li><a class="brightButton" href="">view github</a></li>
-				</ul>
+				<div class="projectSingleContainer">
+					<a href="">
+						<img src="" alt="project1 thumbnail">
+					</a>
+					<div class="projectTextContainer">
+						<h3>project title</h3>
+						<p class="skillsUsed"></p>
+						<p>project description</p>
+						<ul>
+							<li><a class="brightButton" href="">view live</a></li>
+							<li><a class="brightButton" href="">view github</a></li>
+						</ul>
+					</div>
+				</div> <!-- end of project single container -->
+				<div class="projectSingleContainer">
+					<div class="projectTextContainer">
+						<h3>project title</h3>
+						<p class="skillsUsed"></p>
+						<p>project description</p>
+						<ul>
+							<li><a class="brightButton" href="">view live</a></li>
+							<li><a class="brightButton" href="">view github</a></li>
+						</ul>
+					</div>
+					<a href="">
+						<img src="" alt="project1 thumbnail">
+					</a>
+				</div> <!-- end of project single container -->
+				<div class="projectSingleContainer">
+					<a href="">
+						<img src="" alt="project1 thumbnail">
+					</a>
+					<div class="projectTextContainer">
+						<h3>project title</h3>
+						<p class="skillsUsed"></p>
+						<p>project description</p>
+						<ul>
+							<li><a class="brightButton" href="">view live</a></li>
+							<li><a class="brightButton" href="">view github</a></li>
+						</ul>
+					</div>
+				</div> <!-- end of project single container -->
 			</div>
 		</div>
 	</section>
 
-	<section>
+	<section id="contact" class="contact">
 		<div class="wrapper">
 			<h2>get in touch</h2>
-			<ul>
-				<li><a href=""><img src="" alt="Link to LinkedIn Profile"></a></li>
-				<li><a href=""><img src="" alt="Link to github Profile"></a></li>
-				<li><a href=""><img src="" alt="mailto setup for emailing"></a></li>
+			<ul class="linkIconContainer">
+				<li><a href="https://www.linkedin.com/in/sjimmykang/"><i class="fa-brands fa-linkedin linkIcon"><span class="sr-only">Link to LinkedIn Profile</span></i></a></li>
+				<li><a href="https://github.com/sjimmykang"><i class="fa-brands fa-github linkIcon"><span class="sr-only">Link to github Profile</span></i></a></li>
+				<!-- how to mailto from: https://css-tricks.com/snippets/html/mailto-links/ -->
+				<li><a href="mailto:sjimmy.kang@gmail.com"><i class="fa-solid fa-envelope linkIcon"><span class="sr-only">Mailto link for auto emailing</span></i></a></li>
 			</ul>
 			<p>stay in touch</p>
 
-			<form action="">
-				<label for=""></label>
-				<input type="text">
-				<label for=""></label>
-				<input type="text">
-				<label for=""></label>
-				<textarea name="" id="" cols="50" rows="8"></textarea>
+			<!-- emailing form made using Formspree -->
+			<form action="https://formspree.io/f/mknaozno" method="POST">
+				<label>
+					name
+					<input type="text">
+				</label>
+				<label>
+					email address
+					<input type="email" name="email">
+				</label>
+				<label>
+					message
+					<textarea name="message"></textarea>
+				</label>
 
-				<button type="submit">submit</button>
+				<button type="submit" class="brightButton buttonCenter">submit</button>
 			</form>
 		</div>
 	</section>
 
 	<footer>
 		<div class="wrapper">
-			<p>created by Jimmy Kang in 2023</p>
+			<p>created in 2023 by Jimmy Kang</p>
 		</div>
 	</footer>
 </body>
