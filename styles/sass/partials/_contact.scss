@@ -1,6 +1,21 @@
 /* Contact section styles */
 @use "variables" as *;
 
+
+.contact {
+    background-color: $blue;
+    padding: 2rem 0;
+
+    .wrapper {
+        width: 60%;
+    }
+}
+
+.contact h2 {
+    color: $white;
+    margin-bottom: 2rem;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -9,16 +24,13 @@ form {
     label {
         display: flex;
         flex-direction: column;
+        margin-bottom: 1rem;
     }
-}
 
-.contact {
-    background-color: $blue;
-    padding: 2rem 0;
-}
-
-.contact h2 {
-    color: $white;
+    input,
+    textarea {
+        margin-top: 0.5rem;
+    }
 }
 
 .contact p {
@@ -42,7 +54,7 @@ form {
 }
 
 .linkIcon {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: $coral;
 
     &:visited {

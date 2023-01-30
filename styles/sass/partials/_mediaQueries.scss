@@ -1,0 +1,47 @@
+/* Media Queries styles */
+@use "variables" as *;
+
+@media (max-width: 940px) {
+    .projectSingleContainer {
+        flex-direction: column;
+
+        .projectTextContainer,
+        .projectSingleImageContainer {
+            width: 100%;
+        }
+
+        ul {
+            justify-content: space-around;
+        }
+    }
+
+    .textAl-right {
+        text-align: left;
+    }
+
+    .fd-row-rev {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutTextContainer {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+
+    .skills li {
+        width: 25%;
+    }
+
+    .contact .wrapper {
+        width: 80%;
+    }
+
+}

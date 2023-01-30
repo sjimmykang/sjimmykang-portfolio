@@ -4,7 +4,7 @@
 header {
     background-color: $darkBlue;
     padding: 1rem 0;
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,21 +19,28 @@ nav {
     width: 80%;
     z-index: 10;
 
-    a {
-        color: $white;
-        &:visited {
-            color: $white;
-        }
-    }
-
+    
     ul {
         display: flex;
         width: 70%;
         justify-content: space-between;
     }
-
+    
     li {
         margin: 0 1rem;
+    }
+}
+
+nav a {
+    color: $white;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.4s;
+    &:visited {
+        color: $white;
+    }
+    &:hover,
+    &:focus {
+        border-bottom: 2px solid $white;
     }
 }
 
