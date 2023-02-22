@@ -4,13 +4,32 @@
 @media (max-width: 940px) {
     .projectSingleContainer {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         .projectTextContainer,
         .projectSingleImageContainer {
-            width: 100%;
+            width: 90%;
         }
         ul {
             justify-content: space-around;
         }
+    }
+
+    .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 35%;
+        }
+    }
+
+    .aboutTextContainer {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .projectTextContainer {
+        margin-top: 2rem;
     }
 
     .textAl-right {
@@ -20,6 +39,7 @@
     .fd-row-rev {
         flex-direction: column;
     }
+
 }
 
 @media (max-width: 600px) {
@@ -47,16 +67,6 @@
         &:visited {
             color: $white;
         }
-    }
-
-    .aboutContainer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .aboutTextContainer {
-        margin-top: 1rem;
-        width: 100%;
     }
 
 

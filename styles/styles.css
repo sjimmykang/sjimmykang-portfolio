@@ -306,6 +306,7 @@ h3 {
 
 .brightButton {
   color: #222527;
+  margin-top: 1rem;
   border-bottom: 1px solid transparent;
   background-color: #eeaf98;
   display: block;
@@ -365,7 +366,7 @@ header {
 nav {
   position: fixed;
   top: 0;
-  padding: 0.5rem 10%;
+  padding: 1rem 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,8 +379,8 @@ nav {
   z-index: 10;
   -ms-flex-item-align: center;
       align-self: center;
-  -webkit-transition: top 0.4s;
-  transition: top 0.4s;
+  -webkit-transition: top 0.8s;
+  transition: top 0.8s;
 }
 nav ul {
   margin: 0 auto;
@@ -461,13 +462,15 @@ nav a:hover, nav a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 200px;
-  height: 267px;
+  border-radius: 50%;
+  width: 25%;
+  height: auto;
+  min-width: 180px;
   -o-object-fit: cover;
      object-fit: cover;
   /* box shadow using generator: https: //html-css-js.com/css/generator/box-shadow/ */
-  -webkit-box-shadow: 5px 5px 2px 1px #222527;
-          box-shadow: 5px 5px 2px 1px #222527;
+  -webkit-box-shadow: 0px 0px 2px 5px #424b6d;
+          box-shadow: 0px 0px 2px 5px #424b6d;
   /* margin to account for box shadow */
   margin: 6px;
 }
@@ -480,7 +483,7 @@ nav a:hover, nav a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 65%;
+  width: 70%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -578,25 +581,10 @@ nav a:hover, nav a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.projectSingleContainer .projectTextContainer {
-  width: 48%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  /* adjustment to align the image with boxshadow */
-  margin-top: 6px;
 }
 .projectSingleContainer ul {
   display: -webkit-box;
@@ -610,9 +598,7 @@ nav a:hover, nav a:focus {
       justify-content: space-around;
 }
 .projectSingleContainer a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -626,25 +612,51 @@ nav a:hover, nav a:focus {
   margin-bottom: 1rem;
   line-height: 1.5rem;
 }
-.projectSingleContainer .inlineText {
+
+.projectTextContainer {
+  width: 46%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* adjustment to align the image with boxshadow */
+  margin-top: 6px;
+}
+
+.inlineText {
   display: inline-block;
   color: #222527;
   border-bottom: 1px solid #222527;
 }
-.projectSingleContainer .inlineText:visited {
+.inlineText:visited {
   color: #222527;
 }
 
 .projectSingleImageContainer {
-  width: 48%;
+  width: 46%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .projectSingleImageContainer img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-box-shadow: 5px 5px 2px 1px #595959;
-          box-shadow: 5px 5px 2px 1px #595959;
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 2px 4px #595959;
+          box-shadow: 2px 2px 2px 4px #595959;
   /* margin to account for box-shadow */
-  margin: 6px;
+  margin: 6px 2px;
 }
 
 .skillsUsed {
@@ -738,9 +750,19 @@ form textarea {
 .linkIcon {
   font-size: 2.5rem;
   color: #eeaf98;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 .linkIcon:visited {
   color: #eeaf98;
+}
+.linkIcon:hover, .linkIcon:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /* Footer styles */
@@ -761,14 +783,39 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .projectSingleContainer .projectTextContainer,
-.projectSingleContainer .projectSingleImageContainer {
-    width: 100%;
+  .projectSingleContainer .projectSingleImageContainer {
+    width: 90%;
   }
   .projectSingleContainer ul {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutContainer img {
+    width: 35%;
+  }
+  .aboutTextContainer {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .projectTextContainer {
+    margin-top: 2rem;
   }
   .textAl-right {
     text-align: left;
@@ -800,19 +847,6 @@ footer p {
   }
   .navIcon:visited {
     color: #f2f4f5;
-  }
-  .aboutContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .aboutTextContainer {
-    margin-top: 1rem;
-    width: 100%;
   }
   .skills li {
     width: 25%;

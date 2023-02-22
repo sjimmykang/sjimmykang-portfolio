@@ -22,11 +22,13 @@
     justify-content: space-between;
     img {
         display: flex;
-        width: 200px;
-        height: 267px;
+        border-radius: 50%;
+        width: 25%;
+        height: auto;
+        min-width: 180px;
         object-fit: cover;
         /* box shadow using generator: https: //html-css-js.com/css/generator/box-shadow/ */
-        box-shadow: 5px 5px 2px 1px $black;
+        box-shadow: 0px 0px 2px 5px $darkBlue;
         /* margin to account for box shadow */
         margin: 6px;
     }
@@ -39,7 +41,7 @@
 .aboutTextContainer {
     margin-left: 1rem;
     display: flex;
-    width: 65%;
+    width: 70%;
     flex-direction: column;
     justify-content: space-between;
     /* adjustment to align the image with boxshadow */
