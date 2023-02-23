@@ -2,7 +2,7 @@
 @use "variables" as *;
 
 .projects {
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 
 .projects h2 {
@@ -75,7 +75,7 @@
         overflow: hidden;
         box-shadow: 2px 2px 2px 4px $grey;
         /* margin to account for box-shadow */
-        margin: 6px 2px;
+        margin: 3px 2px;
     }
 }
 

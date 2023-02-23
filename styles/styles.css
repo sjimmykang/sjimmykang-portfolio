@@ -434,7 +434,7 @@ nav a:hover, nav a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2rem 0;
+  padding: 4rem 0;
   min-height: 50vh;
 }
 
@@ -498,7 +498,7 @@ nav a:hover, nav a:focus {
 /* Skills section styles */
 .skills {
   background-color: #cad2ec;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .skills h2 {
@@ -529,6 +529,7 @@ nav a:hover, nav a:focus {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 2px solid transparent;
+  margin: 0 0.2rem;
   -webkit-transition: border-bottom 0.4s;
   transition: border-bottom 0.4s;
 }
@@ -550,7 +551,7 @@ nav a:hover, nav a:focus {
 
 /* Projects section style */
 .projects {
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .projects h2 {
@@ -656,7 +657,7 @@ nav a:hover, nav a:focus {
   -webkit-box-shadow: 2px 2px 2px 4px #595959;
           box-shadow: 2px 2px 2px 4px #595959;
   /* margin to account for box-shadow */
-  margin: 6px 2px;
+  margin: 3px 2px;
 }
 
 .skillsUsed {
@@ -683,7 +684,7 @@ nav a:hover, nav a:focus {
 /* Contact section styles */
 .contact {
   background-color: #5169bd;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 .contact .wrapper {
   width: 60%;
@@ -790,13 +791,23 @@ footer p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .projectSingleContainer .projectTextContainer,
-  .projectSingleContainer .projectSingleImageContainer {
+  .projectSingleContainer .projectTextContainer {
     width: 90%;
+  }
+  .projectSingleContainer .projectSingleImageContainer {
+    width: calc(90% - 6px);
   }
   .projectSingleContainer ul {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .about {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .aboutContainer {
     -webkit-box-orient: vertical;
@@ -806,6 +817,8 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0 auto;
+    width: 90%;
   }
   .aboutContainer img {
     width: 35%;
@@ -813,6 +826,13 @@ footer p {
   .aboutTextContainer {
     margin-top: 1rem;
     width: 100%;
+  }
+  .skills ul {
+    width: 90%;
+    margin: 0 auto;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .projectTextContainer {
     margin-top: 2rem;
