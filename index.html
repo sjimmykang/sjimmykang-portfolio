@@ -47,7 +47,7 @@
 		<div class="wrapper">
 			<h2>about me</h2>
 			<div class="aboutContainer">
-				<img src="./assets/profile_pic01.jpg" alt="My profile picture">
+				<img src="./assets/profile-bg-removed.png" alt="My profile picture">
 				<div class="aboutTextContainer">
 					<p>Hello! My name is Seukkeun Jimmy Kang, I go by Jimmy. I am an aspiring Front-end web developer.</p>
 					<p>I've been dedicating my recent time on honing my coding skills. And although I make silly coding mistakes, I love digging down to the root cause of the problem to fix them and learn from my mistakes along the way.</p>
@@ -62,26 +62,6 @@
 			<h2>skills</h2>
 			<ul>
 				<li>
-					<i class="devicon-css3-plain deviconIcon"></i></i>
-					<span class="sr-only">CSS</span>
-					<p>css</p>
-				</li>
-				<li>
-					<i class="devicon-firebase-plain deviconIcon"></i>
-					<span class="sr-only">Firebase</span>
-					<p>firebase</p>
-				</li>
-				<li>
-					<i class="devicon-github-original deviconIcon"></i>
-					<span class="sr-only">github/git</span>
-					<p>github/git</p>
-				</li>
-				<li>
-					<i class="devicon-html5-plain deviconIcon"></i>
-					<span class="sr-only">HTML</span>
-					<p>html</p>
-				</li>
-				<li>
 					<i class="devicon-javascript-plain deviconIcon"></i>
 					<span class="sr-only">JavaScript</span>
 					<p>javascript</p>
@@ -92,9 +72,34 @@
 					<p>react</p>
 				</li>
 				<li>
+					<i class="devicon-firebase-plain deviconIcon"></i>
+					<span class="sr-only">Firebase</span>
+					<p>firebase</p>
+				</li>
+				<li>
+					<i class="devicon-css3-plain deviconIcon"></i></i>
+					<span class="sr-only">CSS</span>
+					<p>css</p>
+				</li>
+				<li>
 					<i class="devicon-sass-original deviconIcon"></i>
 					<span class="sr-only">SASS</span>
 					<p>sass</p>
+				</li>
+				<li>
+					<i class="devicon-git-plain deviconIcon"></i>
+					<span class="sr-only">git</span>
+					<p>git</p>
+				</li>
+				<li>
+					<i class="devicon-github-original deviconIcon"></i>
+					<span class="sr-only">github</span>
+					<p>github</p>
+				</li>
+				<li>
+					<i class="devicon-html5-plain deviconIcon"></i>
+					<span class="sr-only">HTML</span>
+					<p>html</p>
 				</li>
 			</ul>
 		</div>
@@ -103,7 +108,43 @@
 	<section id="projects" class="projects">
 		<div class="wrapper">
 			<h2>projects</h2>
+			<!-- container to hold all the projects -->
 			<div class="projectContainer">
+				<div class="projectSingleContainer">
+					<a class="projectSingleImageContainer" href="https://animetopten.netlify.app/">
+						<img src="./assets/thumb-haikus-highway.png" alt="Haikus Highway project thumbnail">
+					</a>
+					<div class="projectTextContainer textAl-left">
+						<h3>Haikus Highway</h3>
+						<p class="skillsUsed">JavaScript, React, RESTful API, SASS</p>
+						<p>Group orject with 
+							<a href="https://github.com/ScottMartino"
+								class="inlineText">Scott Martino
+							</a> and 
+							<a href="https://github.com/urav083" class="inlineText">Umai Rav
+							</a>
+							. We used React and RESTful API, <a
+								class="inlineText" href="https://www.datamuse.com/api/">Datamuse</a>, to create a haiku generating website. This project was done in conventional driver and navigator format with requirements provided to mimic a situation of working from a client brief.</p>
+						<ul>
+							<li><a class="brightButton" href="https://haikushighwaymain.netlify.app/">view live</a></li>
+							<li><a class="brightButton" href="https://github.com/ScottMartino/GroupProject4">view github</a></li>
+						</ul>
+					</div>
+				</div> <!-- end of project single container -->
+				<div class="projectSingleContainer fd-row-rev">
+					<a class="projectSingleImageContainer" href="https://sjimmykang-med-tracker.netlify.app/">
+						<img src="./assets/thumb-med-tracker.png" alt="Med Tracker App thumbnail">
+					</a>
+					<div class="projectTextContainer textAl-right">
+						<h3>Med Tracker</h3>
+						<p class="skillsUsed">CSS, JavaScript, React, Firebase</p>
+						<p>This project was made for target audience of people trying to keep track of their medication intakes with different intake cycles. The site is built with React and Firebase to store the medication intake data.</p>
+						<ul>
+							<li><a class="brightButton" href="https://sjimmykang-med-tracker.netlify.app/">view live</a></li>
+							<li><a class="brightButton" href="https://github.com/sjimmykang/med-tracker-app">view github</a></li>
+						</ul>
+					</div>
+				</div> <!-- end of project single container -->
 				<div class="projectSingleContainer">
 					<a class="projectSingleImageContainer" href="https://animetopten.netlify.app/">
 						<img src="./assets/thumb-anime.png" alt="Anime Top Ten project thumbnail">
@@ -133,20 +174,6 @@
 					</div>
 					
 				</div> <!-- end of project single container -->
-				<div class="projectSingleContainer">
-					<a class="projectSingleImageContainer" href="https://sjimmykang-electric-select.netlify.app/">
-						<img src="./assets/thumb-electric.png" alt="Electric Select project thumbnail">
-					</a>
-					<div class="projectTextContainer textAl-left">
-						<h3>Electric Select</h3>
-						<p class="skillsUsed">HTML, SASS, JavaScript</p>
-						<p>This was my first psd conversion project. I have used all my current knowledge and power of google to make this website as close as possible to the provided psd file. Later, I have updated the site with JavaScript on the gallery to make it more interactive.</p>
-						<ul>
-							<li><a class="brightButton" href="https://sjimmykang-electric-select.netlify.app/">view live</a></li>
-							<li><a class="brightButton" href="https://github.com/sjimmykang/electric-select">view github</a></li>
-						</ul>
-					</div>
-				</div> <!-- end of project single container -->
 			</div>
 		</div>
 	</section>
@@ -166,15 +193,15 @@
 			<form action="https://formspree.io/f/mknaozno" method="POST">
 				<label>
 					name
-					<input type="text">
+					<input type="text" name="name" required>
 				</label>
 				<label>
 					email address
-					<input type="email" name="email">
+					<input type="email" name="email" required>
 				</label>
 				<label>
 					message
-					<textarea name="message" rows="4"></textarea>
+					<textarea type="text" name="message" rows="4" required></textarea>
 				</label>
 				<button type="submit" class="brightButton buttonCenter">submit</button>
 			</form>

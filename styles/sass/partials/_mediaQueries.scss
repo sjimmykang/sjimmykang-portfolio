@@ -4,13 +4,46 @@
 @media (max-width: 940px) {
     .projectSingleContainer {
         flex-direction: column;
-        .projectTextContainer,
+        justify-content: center;
+        align-items: center;
+        .projectTextContainer {
+            width: 90%;
+        }
         .projectSingleImageContainer {
-            width: 100%;
+            width: calc(90% - 6px);
         }
         ul {
             justify-content: space-around;
         }
+    }
+
+    .about {
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 90%;
+        img {
+            width: 35%;
+        }
+    }
+
+    .aboutTextContainer {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .skills ul {
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+
+    .projectTextContainer {
+        margin-top: 2rem;
     }
 
     .textAl-right {
@@ -20,6 +53,7 @@
     .fd-row-rev {
         flex-direction: column;
     }
+
 }
 
 @media (max-width: 600px) {
@@ -47,16 +81,6 @@
         &:visited {
             color: $white;
         }
-    }
-
-    .aboutContainer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .aboutTextContainer {
-        margin-top: 1rem;
-        width: 100%;
     }
 
 

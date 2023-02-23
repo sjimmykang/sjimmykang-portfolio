@@ -4,7 +4,7 @@
 
 .contact {
     background-color: $blue;
-    padding: 2rem 0;
+    padding: 4rem 0;
     .wrapper {
         width: 60%;
     }
@@ -52,7 +52,13 @@ form {
 .linkIcon {
     font-size: 2.5rem;
     color: $coral;
+    transform: scale(1);
+    transition: transform 0.4s;
     &:visited {
         color: $coral;
+    }
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
     }
 }
