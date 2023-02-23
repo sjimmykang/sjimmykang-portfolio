@@ -188,15 +188,15 @@
 			<form action="https://formspree.io/f/mknaozno" method="POST">
 				<label>
 					name
-					<input type="text">
+					<input type="text" name="name" required>
 				</label>
 				<label>
 					email address
-					<input type="email" name="email">
+					<input type="email" name="email" required>
 				</label>
 				<label>
 					message
-					<textarea name="message" rows="4"></textarea>
+					<textarea type="text" name="message" rows="4" required></textarea>
 				</label>
 				<button type="submit" class="brightButton buttonCenter">submit</button>
 			</form>
