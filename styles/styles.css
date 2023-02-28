@@ -729,6 +729,9 @@ form input,
 form textarea {
   margin-top: 0.5rem;
 }
+form input {
+  padding: 0.2rem 0.5rem;
+}
 
 .contact p {
   color: #f2f4f5;
